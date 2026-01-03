@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Product Tracker",
+  "version": "1.0.0",
+  "description": "Track grocery prices across retailers using your orders and receipts",
+  "permissions": ["storage", "downloads"],
+  "host_permissions": ["https://www.harristeeter.com/*"],
+  "background": {
+    "service_worker": "scripts/background.js",
+    "type": "module"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.harristeeter.com/shop/purchase-history*"],
+    "js": ["scripts/content.js"],
+    "type": "module"
+  }],
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "product-tracker",
+  "private": true,
+  "type": "module",
+  "module": "bundler.ts",
+  "scripts": {
+    "build": "bun bundler.ts",
+    "lint": "oxlint --type-aware --type-check",
+    "lint:fix": "oxlint --type-aware --fix",
+    "format": "oxfmt"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "chrome-types": "^0.1.404",
+    "oxfmt": "^0.21.0",
+    "oxlint": "^1.36.0",
+    "oxlint-tsgolint": "^0.10.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "zod": "^4.3.4"
+  }
+}

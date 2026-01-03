@@ -1,0 +1,21 @@
+body {
+  width: 300px;
+  padding: 16px;
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+  color: #1a1a1a;
+}
+
+#status {
+  color: #666;
+  font-size: 14px;
+}
